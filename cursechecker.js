@@ -11,16 +11,6 @@ const substitutions = {
     'r': ['4'],
 }
 
-//
-// node {
-//   key: str
-//   value {
-//      isLeaf: bool
-//      children: node {}
-//   }
-// }
-//
-
 const getPopulatePrefixTree = () => {
     let prefix_tree = {}
     bad_words.forEach((word) => {
@@ -85,52 +75,3 @@ console.log(filterName('fool'))
 console.log(filterName('fork'))
 console.log(filterName('silly'))
 console.log(filterName('mrf00l'))
-
-
-// const isContainsCurses = (username) => {
-//     const charArr = username.split('');
-//
-//     let prefix = '';
-//     let child = null;
-//
-//     while (charArr) {
-//         prefix = prefix + charArr.shift();
-//
-//         child = prefixTree.children[prefix]
-//
-//     }
-//     // for i while
-//     prefix = ''
-//
-//     prefix = prefix + charArr.shift()
-//
-//     child = prefixTree.children[prefix];
-//
-//     if child {
-//
-//     }
-//
-//     return false
-//
-// }
-//
-// const find_curse = (charArr) => {
-//     const _charArr = [...charArr];
-//     let prefix = '';
-//     let prefix_node = prefix_root;
-//
-//     while (charArr) {
-//         prefix = prefix + charArr.shift();
-//         prefix_node = prefix_node.children[prefix]
-//         if (prefix.isLeaf) {
-//             return true;
-//         }
-//     }
-//     // for i while
-//     prefix = ''
-//
-//     prefix = prefix + charArr.shift()
-//
-//     child = prefixTree.children[prefix];
-//
-// }
